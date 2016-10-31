@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function extract()
+            {
+                var url = document.gif.url.value;
+                var str = '/giphy ' + url.split('%2F')[4];
+                document.gif.output.value = str;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="gif">
+            <input type="textbox" name="url"><br>
+                <input type="button" onclick="extract();" value="Extract" />
+            <input type="textbox" id="output" >
+        </form>
+    </body>
+</html>
+
